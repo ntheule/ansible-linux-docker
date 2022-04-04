@@ -17,6 +17,12 @@
     state: present
   become: true
 
+- name: Add Docker repository
+  ansible.builtin.apt_repository:
+    repo: https://download.docker.com/linux/ubuntu
+    state: present
+  become: true
+
 - name: Install Docker packages
   ansible.builtin.apt:
     name:
