@@ -1,0 +1,8 @@
+namespace: "ntheule_lab"
+name: "linux_docker"
+description: ""
+version: "1.0.0"
+readme: "README.md"
+authors:
+  - "Nathan Theule"
+repository: "https://github.com/ntheule/ansible-linux-docker.git"
