@@ -19,7 +19,7 @@
 
 - name: Add Docker repository
   ansible.builtin.apt_repository:
-    repo: https://download.docker.com/linux/ubuntu
+    repo: https://download.docker.com/linux/ubuntu focal stable
     state: present
   become: true
 
