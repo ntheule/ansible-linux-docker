@@ -11,6 +11,12 @@
     update_cache: true
   become: true
 
+- name: Install prerequisite Python packages
+  ansible.builtin.pip:
+    name:
+      - docker
+      - docker-compose
+
 - name: Add key for Docker repository
   ansible.builtin.apt_key:
     url: https://download.docker.com/linux/ubuntu/gpg
